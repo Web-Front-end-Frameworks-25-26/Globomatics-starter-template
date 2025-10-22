@@ -1,0 +1,26 @@
+<!-- src/app/components/product-detail/product-detail.component.html -->
+<div class="product-detail-container">
+    <button class="back-button" (click)="goBack()">← Back to Products</button>
+
+    <!-- TODO: Add @if directive -->
+    <div class="product-detail">
+        <div class="product-image">
+            <!-- TODO: Add image with property binding -->
+            <img src="" alt="">
+        </div>
+        <div class="product-info">
+            <!-- TODO: Display product properties using interpolation -->
+            <h2>Product Name</h2>
+            <p class="price">$0.00</p>
+            <p class="description">Product description</p>
+            <p class="category">Category: </p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    @if (!product) {
+        <div class="not-found">
+            <p>Product not found</p>
+        </div>
+    }
+
+</div>
