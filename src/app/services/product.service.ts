@@ -52,11 +52,12 @@ export class ProductService {
 
   constructor() { }
 
-  //getProducts(): Observable<Product[]> {
-    // TODO: Return products as Observable
-  //}
+  getProducts(): Observable<Product[]> {
+    return of(this.mockProducts);
+  }
 
-  //getProduct(id: number): Observable<Product | undefined> {
-    // TODO: Find product by id and return as Observable
-  //}
+  getProduct(id: number): Observable<Product | undefined> {
+    const product = this.mockProducts.find(p => p.id === id);
+    return of(product);
+  }
 }

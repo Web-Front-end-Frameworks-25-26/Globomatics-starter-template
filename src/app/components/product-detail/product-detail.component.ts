@@ -10,8 +10,9 @@ import { Product } from '../../models/product.model';
 export class ProductDetailComponent implements OnInit {
   product: Product | undefined;
 
+  // TODO: Inject required services
+
   constructor(
-    // TODO: Inject required services
   ) { }
 
   ngOnInit(): void {
